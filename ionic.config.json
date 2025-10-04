@@ -1,0 +1,7 @@
+{
+  "name": "Pokedeck",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

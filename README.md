@@ -1,7 +1,7 @@
 <h1 align="center">🎮 PokéDeck</h1>
 
 <p align="center">
-  <img src="src/assets/icon/pokeball.png" width="120" alt="Pokébola" />
+  <img src="src/assets/pngwing.com.png" width="120" alt="Pokébola" />
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@ O objetivo foi criar um aplicativo **Ionic 7** com **três páginas principais**
 
 | Tela de Login | Tela de Cadastro | Tela de Pokémons |
 |:--------------:|:----------------:|:----------------:|
-| ![Login](assets/screens/login.png) | ![Cadastro](assets/screens/cadastro.png) | ![Pokemons](assets/screens/pokemon.png) |
+| ![Login](assets/login.png) | ![Cadastro](assets/cadastro.png) | ![Pokemons](assets/pokemon.png) |
 
 ---
 

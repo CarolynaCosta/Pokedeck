@@ -34,7 +34,7 @@ O objetivo foi criar um aplicativo **Ionic 7** com **três páginas principais**
 
 | Tela de Login | Tela de Cadastro | Tela de Pokémons |
 |:--------------:|:----------------:|:----------------:|
-| ![Login](assets/login.png) | ![Cadastro](assets/cadastro.png) | ![Pokemons](assets/pokemon.png) |
+| ![Login](src/assets/login.png) | ![Cadastro](src/assets/cadastro.png) | ![Pokemons](src/assets/pokemon.png) |
 
 ---
 

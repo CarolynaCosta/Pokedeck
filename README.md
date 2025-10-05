@@ -108,10 +108,10 @@ Abra no navegador:
 
 ## 👩‍💻 Desenvolvedora
 
-**Nome:** Carolyna Costa  
+**Nome:** Ana Carolyna Costa  
 **Curso:** Análise e Desenvolvimento de Sistemas  
 **Unidade:** UNISUAM  
-**Período:** Noite  
+**Período:** 4°Período 
 📍 **Turma:** BG - M - ADS0301M  
 
 📎 **Repositório GitHub:**  

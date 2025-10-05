@@ -112,7 +112,7 @@ Abra no navegador:
 **Curso:** Análise e Desenvolvimento de Sistemas  
 **Unidade:** UNISUAM  
 **Período:** Noite  
-📍 **Turma:** BG - M - 2025-02  
+📍 **Turma:** BG - M - ADS0301M  
 
 📎 **Repositório GitHub:**  
 🔗 [https://github.com/CarolynaCosta/Pokedeck](https://github.com/CarolynaCosta/Pokedeck)

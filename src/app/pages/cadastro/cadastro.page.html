@@ -1,0 +1,23 @@
+<ion-content>
+  <div class="cadastro-container">
+    <img src="assets/pngwing.com.png" alt="Pokébola" class="pokeball-img" />
+    <h1>Criar Conta</h1>
+
+    <div class="input-group">
+      <label>Email</label>
+      <input type="email" [(ngModel)]="email" placeholder="Digite seu email" />
+    </div>
+
+    <div class="input-group">
+      <label>Senha</label>
+      <input type="password" [(ngModel)]="password" placeholder="Digite sua senha" />
+    </div>
+
+    <button class="btn" (click)="cadastrar()">Cadastrar</button>
+
+    <p class="login-link">
+      Já tem conta?
+      <span (click)="voltarLogin()">Entrar</span>
+    </p>
+  </div>
+</ion-content>

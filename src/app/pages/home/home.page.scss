@@ -1,0 +1,109 @@
+.home-page {
+  --background: linear-gradient(to bottom, #2a2a2a, #151515);
+
+  .header {
+    text-align: center;
+    margin-top: 40px;
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      animation: bounce 2s infinite;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ffb300;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+
+  .buttons-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .menu-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+
+    img {
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &.pokemon {
+      background: linear-gradient(45deg, #ffcb05, #e3350d);
+      color: #fff;
+    }
+
+    &.perfil {
+      background: linear-gradient(45deg, #3b4cca, #ffcb05);
+      color: #fff;
+    }
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+/* ====== Botão de Voltar ====== */
+.voltar-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #ffb300;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 8px rgba(255, 179, 0, 0.4);
+}
+
+.voltar-icon {
+  width: 22px;
+  height: 22px;
+  stroke: #ffb300;
+  transition: transform 0.3s ease, stroke 0.3s ease;
+}
+
+.voltar-btn:hover .voltar-icon {
+  transform: translateX(-4px);
+  stroke: #ff7043;
+}
+
+.voltar-btn:hover {
+  color: #ff7043;
+  transform: scale(1.05);
+  text-shadow: 0 0 10px rgba(255, 100, 0, 0.6);
+}

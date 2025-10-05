@@ -3,8 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyDsLzD6_4pQAcGjSgywZg5I6tjDVISce-s",
+    authDomain: "pokedeckapp-f8442.firebaseapp.com",
+    projectId: "pokedeckapp-f8442",
+    storageBucket: "pokedeckapp-f8442.firebasestorage.app",
+    messagingSenderId: "252553464349",
+    appId: "1:252553464349:web:4eb04d78789211505d54f4"
+  }
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file

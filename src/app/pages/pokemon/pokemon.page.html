@@ -1,0 +1,76 @@
+<ion-content>
+  <!-- Header -->
+  <div class="header-container">
+    <img src="assets/pngwing.com.png" alt="Pokébola" class="pokeball-img" />
+    <h1>Pokémons</h1>
+  </div>
+
+  <!-- Botão de voltar com SVG -->
+  <button class="voltar-btn" (click)="voltar()">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+      stroke-width="3" viewBox="0 0 24 24" class="voltar-icon">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6" />
+    </svg>
+    Voltar
+  </button>
+
+
+  <!-- Barra de busca personalizada -->
+  <div class="searchbar-container">
+  <div class="searchbar-inner">
+    <!-- Ícone SVG embutido -->
+    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+      stroke-width="2" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+
+    <!-- Search -->
+    <input
+      type="text"
+      placeholder="Buscar Pokémon"
+      [(ngModel)]="searchText"
+      (input)="searchPokemons()"
+    />
+
+    <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+      stroke-width="2" viewBox="0 0 24 24">
+      <line x1="22" y1="2" x2="11" y2="13"></line>
+      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+    </svg>
+  </div>
+</div>
+
+
+  <!-- Grade de Pokémons -->
+  <div class="pokemon-grid">
+    <div
+      class="pokemon-card"
+      *ngFor="let p of filteredPokemons"
+      (click)="toggleFlip(p)"
+      [class.flipped]="p.flipped"
+    >
+      <!-- Frente do card -->
+      <div class="pokemon-card-front">
+        <img [src]="p.sprites.front_default" alt="{{ p.name }}" />
+        <h3>{{ p.name | titlecase }}</h3>
+      </div>
+
+      <!-- Verso do card -->
+      <div class="pokemon-card-back">
+        <h3>{{ p.name | titlecase }}</h3>
+        <div *ngFor="let stat of p.stats">
+          <strong>{{ stat.stat.name | titlecase }}:</strong> {{ stat.base_stat }}
+        </div>
+        <div class="types">
+          <span
+            *ngFor="let t of p.types"
+            class="type {{ t.type.name }}"
+          >
+            {{ t.type.name | titlecase }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

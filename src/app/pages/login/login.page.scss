@@ -1,0 +1,106 @@
+ion-content {
+  --background: linear-gradient(to bottom, #292929, #1f1f1f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 90%;
+  max-width: 360px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Pokébola animada */
+.pokeball-img {
+  width: 90px;
+  height: 90px;
+  margin-top: 40px;
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+
+/* Título */
+h1 {
+  color: #ffb300;
+  font-size: 28px;
+  margin: 20px 0;
+  text-shadow: 0 0 10px rgba(255, 179, 0, 0.6);
+}
+
+/* Inputs */
+.input-group {
+  margin: 15px 0;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  color: #f8f8f8;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 15px;
+  box-shadow: inset 0 0 6px rgba(255, 100, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  box-shadow: 0 0 12px rgba(255, 153, 0, 0.7);
+}
+
+/* Botão */
+.login-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ff3d00, #ff9800);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 77, 0, 0.4);
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.6);
+}
+
+/* Link de cadastro */
+.register-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.register-text a {
+  color: #ff7043;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-text a:hover {
+  color: #ffb300;
+}

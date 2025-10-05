@@ -1,0 +1,28 @@
+<ion-content class="home-page">
+  <div class="header">
+    <img src="assets/pngwing.com.png" alt="Pokebola" class="logo" />
+    <h1>Pokédeck App</h1>
+    <p>Escolha uma opção para começar</p>
+  </div>
+
+<!-- Botão de voltar com SVG -->
+  <button class="voltar-btn" (click)="voltar()">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+      stroke-width="3" viewBox="0 0 24 24" class="voltar-icon">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6" />
+    </svg>
+    Sair
+  </button>
+
+  <div class="buttons-container">
+    <ion-card class="menu-card pokemon" (click)="goToPokemon()">
+      <img src="assets/pikachu.png" alt="Pokémons" />
+      <h2>Pokémons</h2>
+    </ion-card>
+
+    <ion-card class="menu-card perfil" (click)="goToPerfil()">
+      <img src="assets/trainer2.png" alt="Perfil" />
+      <h2>Meu Perfil</h2>
+    </ion-card>
+  </div>
+</ion-content>

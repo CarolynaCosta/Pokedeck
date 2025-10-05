@@ -1,0 +1,23 @@
+<ion-content>
+  <div class="perfil-container">
+    <!-- Botão de voltar com SVG -->
+  <button class="voltar-btn" (click)="voltar()">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+      stroke-width="3" viewBox="0 0 24 24" class="voltar-icon">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6" />
+    </svg>
+    Voltar
+  </button>
+
+    <!-- Card do perfil -->
+    <div class="perfil-card">
+      <img [src]="user.foto" alt="Foto de perfil" class="perfil-foto" />
+
+      <h2>{{ user.nome }}</h2>
+      <p><strong>Turma:</strong> {{ user.turma }}</p>
+      <p><strong>Unidade:</strong> {{ user.unidade }}</p>
+
+      <button class="logout-btn" (click)="logout()">Sair</button>
+    </div>
+  </div>
+</ion-content>
